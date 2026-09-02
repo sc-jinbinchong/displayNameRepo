@@ -73,6 +73,20 @@
   <ItemGroup>
     <Folder Include="App_Config\Include\" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Sitecore.ExperienceEdge.Connector.Abstraction">
+      <HintPath>lib\Sitecore.ExperienceEdge.Connector.Abstraction.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceEdge.Connector.ContentHubDelivery">
+      <HintPath>lib\Sitecore.ExperienceEdge.Connector.ContentHubDelivery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceEdge.Connector.EntityGenerator">
+      <HintPath>lib\Sitecore.ExperienceEdge.Connector.EntityGenerator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

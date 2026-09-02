@@ -17,5 +17,9 @@
 			<ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename)%(Extension)')" />
 			<ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename).pdb')" />
 			<ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename).xml')" />
+			<!-- Re-include the patched DLLs so they override the built-in versions -->
+			<ExcludeFromPackageFiles Remove="bin\Sitecore.ExperienceEdge.Connector.Abstraction.dll" />
+			<ExcludeFromPackageFiles Remove="bin\Sitecore.ExperienceEdge.Connector.ContentHubDelivery.dll" />
+			<ExcludeFromPackageFiles Remove="bin\Sitecore.ExperienceEdge.Connector.EntityGenerator.dll" />
 		</ItemGroup>
 </Project>
