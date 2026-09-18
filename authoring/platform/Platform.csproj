@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -74,16 +74,8 @@
     <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Sitecore.ExperienceEdge.Connector.Abstraction">
-      <HintPath>lib\Sitecore.ExperienceEdge.Connector.Abstraction.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.ExperienceEdge.Connector.ContentHubDelivery">
-      <HintPath>lib\Sitecore.ExperienceEdge.Connector.ContentHubDelivery.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Sitecore.ExperienceEdge.Connector.EntityGenerator">
-      <HintPath>lib\Sitecore.ExperienceEdge.Connector.EntityGenerator.dll</HintPath>
+    <Reference Include="Sitecore.Kernel.dll">
+      <HintPath>lib\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
